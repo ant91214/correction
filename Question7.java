@@ -10,6 +10,7 @@ public class Question7
     int[] fibs = new int[10];
 fibs[0] = 1;
 fibs[1] = 1;
+//
 
 for (int j = 1; j < fibs.length; j++)
 {
