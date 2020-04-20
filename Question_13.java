@@ -7,27 +7,23 @@
  */
 public class Question_13
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Question_13
-     */
-    public Question_13()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    int maximum = /*values[0] */;
+for (int k = 1; k < values.length; k++)
+{
+if (values[k] > maximum)
+{
+maximum = values[k];
+}
+}
+System.out.println(maximum);
+/**Answer:values[0]
+ * The code segment compares each integer in the array after the first to 
+ * maximum.If an integer is the maximum integer found so far, maximum is 
+ * assigned that integer. By initializing maximum to values[0],
+ * the first element in the array will be the maximum integer found so far
+ * 
+ * I got the answer wrong as I assumed they were simply looking for the max 
+ * value and i failed to realixe that the code was assigning the maximum by
+ * compairing to the other numbers
+ */
 }

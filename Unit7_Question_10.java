@@ -7,27 +7,27 @@
  */
 public class Unit7_Question_10
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    /** Precondition: firstList.size() == secondList.size() */
 
-    /**
-     * Constructor for objects of class Unit7_Question_10
-     */
-    public Unit7_Question_10()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public static boolean isReversed(ArrayList<Integer> firstList,
+ArrayList<Integer> secondList)
+{
+for (int j = 0; j < firstList.size() / 2; j++)
+{
+if (firstList.get(j) != secondList.get(secondList.size() - 1 - j))
+{
+return false;
+}
+}
+return true;
+}
+/**
+ * Answer:When firstList is {1, 3, 5, 7} and secondList is {5, 5, 3, 1}
+ * 
+ * Why this won't work. The loop will iterate two times. Therefore, the 1 in 
+ * firstList will becompared with the 1 in secondList and the 3 in firstList 
+ * will be compared with the 3 in secondList.These pairs are equal, so the method 
+ * returns true even though the last element of firstList is not equal to the 
+ * first element of secondList.
+ */
 }

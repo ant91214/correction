@@ -7,27 +7,18 @@
  */
 public class Uni7_Question_2
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Uni7_Question_2
+    ArrayList<Integer> numbers = new ArrayList();
+    
+    /**I new ArrayList()
+     * II new ArrayList<Integer>
+     * III new ArrayList<Integer>()
+     * 
+     * Answer: The answer is I and III
+     * 
+     * Answer I wrote: answer III . I selected this as the answer 
+     * because I didn't think new ArrayList() would also work
+     * 
+     * 
+     * 
      */
-    public Uni7_Question_2()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
 }
